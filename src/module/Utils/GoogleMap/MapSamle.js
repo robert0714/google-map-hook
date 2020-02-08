@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Map from "../../Utils/GoogleMap/Map";
 import Marker from "../../Utils/GoogleMap/Marker";
 import { SpringBootServer, point } from "../../../StaticResource";
+import NavBar from "../../Utils/GoogleMap/NavBar";
 
   
 // import BulidingPhoto from "./TypePhoto";
@@ -63,25 +64,12 @@ const Container2 = () => {
   // };
 
   return (
+    <div id="valuation"   style={{ minHeight: 1103 , paddingTop: 74  }}>
     <div style={{ width: 1110, height: 435 }}>
       <Map id="myMap" options={options} gmarkers={gmarkers}>
-        {estimatedata.map((point, i) => {
-          console.log(point);
-          return (
-            <Marker
-              key={i}
-              lat={point.LATITUDE}
-              lng={point.LONGITUDE}
-              data={point}
-              category={point.B_TYPE_INT}
-              title={point.B_TYPE}
-              // image={BulidingPhoto(point.B_TYPE_INT)}
-              setInfowindow={true}
-            ></Marker>
-          );
-        })}
       </Map>
-      <button onClick={Visible}>MarkVisible</button>
+      <NavBar></NavBar>
+      </div>
     </div>
   );
 };
