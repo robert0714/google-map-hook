@@ -62,13 +62,30 @@ const Container2 = () => {
   //   B_AGE: 33.7,
   //   LATITUDE: 25.031985
   // };
-
+  const cssstyle = {
+    minHeight: "1103px",
+    paddingTop: "74px" ,
+    display: "block" 
+  };
+  const mapstyle = {    
+    width: "100%",
+    height: "90%",
+    position: "relative",
+    overflow: "hidden"
+  };
+  const resultstyle = {    
+    display: "block" 
+  };
   return (
-    <div id="valuation"   style={{ minHeight: 1103 , paddingTop: 74  }}>
-    <div style={{ width: 1110, height: 435 }}>
-      <Map id="myMap" options={options} gmarkers={gmarkers}>
-      </Map>
-      <NavBar></NavBar>
+    <div id="valuation"  className="g-grid none result basic"    style={cssstyle}>
+    <div  className="container xs">
+      <div className="result"  style={resultstyle}   >
+        <div className="g-map">
+          <Map id="map" options={options} gmarkers={gmarkers}   style={mapstyle} >
+          </Map>
+        </div>
+        <NavBar></NavBar>
+        </div>
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ export default function NavItem ({ id, dataId, className ,value,labelName }) {
     
    return (
          <li>
-            <label className="g-checkbox mg-0 filter f-1" htmlFor={id}  >{labelName}
+            <label className={className} htmlFor={id}  >{labelName}
                <input id={id} type="checkbox"   data-id={dataId}   onChange={changeHandler} />
                <span className="checkmark"></span>
             </label>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="45px" viewBox="0 0 41 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>建物類型/icon 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="建物類型/icon-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <path d="M4,27 L4,44 M16.1886792,27 L16.1886792,44 M37.3584906,27 L37.3584906,43.3461538" id="Stroke-13" stroke="#A17D58" stroke-width="1.5" stroke-linecap="square"></path>
+        <path d="M12.05,31.4107143 L12.05,34.0535714 L12.05,31.4107143 Z M31.55,40 L33.5,38.0178571 L31.55,40 Z M27,40 L33.5,33.3928571 L27,40 Z M40,14.8928571 L40,19.1875 C40,21.9129464 37.80625,24.1428571 35.125,24.1428571 C32.44375,24.1428571 30.25,21.9129464 30.25,19.1875 C30.25,21.9129464 28.05625,24.1428571 25.375,24.1428571 C22.69375,24.1428571 20.5,21.9129464 20.5,19.1875 C20.5,21.9129464 18.30625,24.1428571 15.625,24.1428571 C12.94375,24.1428571 10.75,21.9129464 10.75,19.1875 C10.75,21.9129464 8.55625,24.1428571 5.875,24.1428571 C3.19375,24.1428571 1,21.9129464 1,19.1875 L1,14.8928571 L40,14.8928571 Z M40,14.8928571 L1,14.8928571 L6.85,3 L34.15,3 L40,14.8928571 Z M20.5,3 L20.5,10.9285714 L20.5,3 Z M10.75,10.9285714 L14,3 L10.75,10.9285714 Z M30.25,10.9285714 L27,3 L30.25,10.9285714 Z" id="Stroke-14" stroke="#A17D58" stroke-width="1.5" stroke-linecap="round"></path>
+        <path d="M1,44 L40,44" id="Stroke-12" stroke="#A17D58" stroke-width="1.5" stroke-linecap="round"></path>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="button/了解更多(邊框)" transform="translate(-108.000000, -13.000000)" fill="#C59E4F" fill-rule="nonzero">
+            <g id="Group" transform="translate(29.000000, 9.000000)">
+                <path d="M86.7121709,11.693072 L80.6776986,17.7126627 C80.2938333,18.0957791 79.6714615,18.0957791 79.2877825,17.7126627 C78.9040725,17.3298871 78.9040725,16.7090619 79.2877825,16.3263173 L84.6273588,10.9998993 L79.2879378,5.67366719 C78.9042278,5.29073669 78.9042278,4.66997346 79.2879378,4.28719788 C79.6716478,3.90426737 80.2939886,3.90426737 80.6778539,4.28719788 L86.7123262,10.3068815 C86.9041812,10.4983623 87,10.7490533 87,10.9998683 C87,11.2508072 86.9039948,11.5016842 86.7121709,11.693072 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

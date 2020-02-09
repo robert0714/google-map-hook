@@ -5,10 +5,7 @@ import Container2 from "./module/Utils/GoogleMap/MapSamle";
 
 function App() {
   return (
-    <div  id="valuation" className="g-grid none result basic">
-       
       <Container2 />
-    </div>
   );
 }
 
