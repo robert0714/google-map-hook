@@ -83,8 +83,9 @@ const Container2 = () => {
         <div className="g-map">
           <Map id="map" options={options} gmarkers={gmarkers}   style={mapstyle} >
           </Map>
+          <NavBar></NavBar>
         </div>
-        <NavBar></NavBar>
+        
         </div>
       </div>
     </div>

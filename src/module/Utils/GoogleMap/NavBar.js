@@ -5,28 +5,24 @@ import NavItem from "../../Utils/GoogleMap/NavItem";
 
 export default function NavBar ( ) {
   const [actived, setActived] = useState(false);
-  console.log("test anchor");
+  const [navClassName, setNavClassName] = useState("nav");
+   
   function changeHandler   (e)  {
     e.preventDefault();
     setActived(!actived);
+    if(actived){
+      setNavClassName("nav actived") ;
+    }else{
+      setNavClassName("nav") ;
+    }
   };
   const navstyle = {
     top:"20%" 
   }
-  const navbarstyle = {
-    width: "34px"  ,
-    height: "36px"   ,
-    background: "#B65138"    ,     
-    boxShadow: "0 2px 4px 0 rgba(0, 0, 0, 0.5)" ,
-    position: "absolute",
-    top: "0" ,
-    left: "-34px" ,
-    borderRadius: ".25rem 0 0 .25rem",
-    padding: "0"
-  }
+   
   return (
     <>
-    <nav className="nav"  style={navstyle} >
+    <nav className= {navClassName}  style={navstyle} >
       <a href="javascript:;" title="篩選" className="btn map-btn"    onClick={ changeHandler }></a>
       <div>
           <ul className="reset">
