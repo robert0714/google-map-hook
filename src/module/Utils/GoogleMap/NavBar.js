@@ -23,7 +23,7 @@ export default function NavBar ( ) {
   return (
     <>
     <nav className= {navClassName}  style={navstyle} >
-      <a href="javascript:;" title="篩選" className="btn map-btn"    onClick={ changeHandler }></a>
+      <a href="#" title="篩選" className="btn map-btn"    onClick={ changeHandler }></a>
       <div>
           <ul className="reset">
                   <NavItem labelName="電梯大樓 / 華廈"  id="6box"  dataId="f-1" value="6" className= "g-checkbox mg-0 filter f-1"  ></NavItem>
