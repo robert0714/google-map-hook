@@ -85,7 +85,8 @@ const Container2 = () => {
   return (
      
     <div id="valuation"  className="g-grid none result basic"    style={cssstyle}>
-      <AddressBar setLat={setLat} setLng={setLng} />      
+      <AddressBar  setLat={setLat} lng={lng} setLng={setLng} />     
+      lat ={lat}  ,  lng={lng}  
     <div  className="container xs">
       <div className="result"  style={resultstyle}   >
         <div className="g-map">

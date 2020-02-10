@@ -1,19 +1,24 @@
-import React, { useState, useEffect } from "react";
-import  Location  from "../../logic/Geocoder";
+import React, { useState, useContext } from "react";
+import Location  from "../../logic/Geocoder";
+import {StateContext} from '../../../contexts';
 
-export default function AddressBar ({setLat  , setLng}) {
+export default function AddressBar ({setLat ,  setLng }) {
     const [addr,setAddr] =  useState('220新北市板橋區縣民大道二段7號6樓');
+    function test1(e){
+        console.log("test 1");
+        console.log(e);
+        setLat(e);
+    }
+    function test2(e){
+        console.log("test 2");
+        console.log(e);
+        setLng(e);
+    }
+
     function handleAddr (evt) {
         setAddr(evt.target.value);
         console.log("addr: "+addr);
-        const lat = '';
-        const lng = '';  
-            
-        Location(addr ,lat , lng);
-        console.log('lat: ',lat); 
-        console.log('lng: ',lng);    
-        setLat(lat);
-        setLng(lng);
+        Location(addr ,test1, test2);
     }
     return (
         <>
