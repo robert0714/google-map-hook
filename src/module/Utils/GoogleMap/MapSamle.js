@@ -1,10 +1,10 @@
 
 import React, { useState, useEffect } from "react";
-import Map from "../../Utils/GoogleMap/Map";
+import Map from "./Map";
 import Marker from "../../Utils/GoogleMap/Marker";
 import { SpringBootServer, point } from "../../../StaticResource";
-import NavBar from "../../Utils/GoogleMap/NavBar";
-
+import NavBar from "./NavBar";
+import { location } from "../../logic/Geocoder";
   
 // import BulidingPhoto from "./TypePhoto";
 
@@ -62,6 +62,14 @@ const Container2 = () => {
   //   B_AGE: 33.7,
   //   LATITUDE: 25.031985
   // };
+
+  const [addr,setAddr] =  useState('220新北市板橋區縣民大道二段7號6樓');
+  function handleAddr (evt) {
+    setAddr(evt.target.value);
+    console.log("addr: "+addr);
+    location(addr);
+      
+  }
   const cssstyle = {
     minHeight: "1103px",
     paddingTop: "74px" ,
@@ -77,7 +85,10 @@ const Container2 = () => {
     display: "block" 
   };
   return (
+     
     <div id="valuation"  className="g-grid none result basic"    style={cssstyle}>
+       <label htmlFor="addr" >地址</label>
+       <input type="text" id ="addr" name="addr" value={addr}  onChange={handleAddr}/>
     <div  className="container xs">
       <div className="result"  style={resultstyle}   >
         <div className="g-map">
