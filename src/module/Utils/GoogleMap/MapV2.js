@@ -3,7 +3,7 @@ import { functions, isEqual, omit } from "lodash";
 export default React.memo(MapV2, shouldNotUpdate);
 function MapV2({ id, options, onMount, className, style }) {
   const ref = useRef();
-  const key = "AIzaSyDq38KGxDrWNbji5SjRwC1cT0twrsDhafc";
+  const key = "AIzaSyCz5mP_fkHn_A2_o7DkODD607AFqu_H0Ls";
 
   useEffect(() => {
     const onLoad = () => {
