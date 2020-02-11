@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from "react";
+import MapV2 from "./MapV2";
 import Map from "./Map";
 import Marker from "../../Utils/GoogleMap/Marker";
 import { SpringBootServer, point } from "../../../StaticResource";
@@ -23,7 +24,7 @@ const Container2 = () => {
   const [ lng ,setLng] =  useState(121.5246105);
 
   const options = {
-    center: { lat: lat, lng },
+    center: { lat: lat, lng:lng },
     mapTypeControl: false,
     scaleControl: true,
     zoomControlOptions: {
@@ -39,6 +40,10 @@ const Container2 = () => {
     //zoom: 17 比例尺為  50 m，地圖全長 1250 m，半徑顯示為  625 m
     //zoom: 18 比例尺為  20 m，地圖全長  500 m
   };
+  const [mapProps, setMapProps] = useState({
+    options: options,
+    // onMount: addMarkers(links)
+})
 
   const gmarkers = [];
 
@@ -65,8 +70,12 @@ const Container2 = () => {
   //   LATITUDE: 25.031985
   // };
   useEffect(() => {
-    console.log(lat);
-  }, []);
+    const onLoad = () => {
+      console.log("useEffect");
+       
+    };
+    
+  }, [  options,lat,lng]);
   
   const cssstyle = {
     minHeight: "1103px",
@@ -90,8 +99,9 @@ const Container2 = () => {
     <div  className="container xs">
       <div className="result"  style={resultstyle}   >
         <div className="g-map">
-          <Map id="map" options={options} gmarkers={gmarkers}   style={mapstyle} >
-          </Map>
+          {/* <Map id="map" options={options} gmarkers={gmarkers}   style={mapstyle} >
+          </Map> */}
+          <MapV2 id="map" options={options}  style={mapstyle} /> 
           <NavBar></NavBar>
         </div>
         
